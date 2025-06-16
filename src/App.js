@@ -50,7 +50,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename="/TextUtils-React">
         <Navbar
           title="Karan"
           about="About Karan"
@@ -63,7 +63,6 @@ function App() {
         <div className="container my-3">
           <Routes>
             <Route
-              exact
               path="/about"
               element={
                 <About
@@ -75,7 +74,6 @@ function App() {
               }
             />
             <Route
-              exact
               path="/"
               element={
                 <TextForm
